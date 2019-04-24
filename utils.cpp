@@ -85,7 +85,7 @@ namespace
 		{
 			int key = pair.first;
 			int value = pair.second;
-			result *= pow(static_cast<int>(key), static_cast<int>(value));
+			result *= pow(static_cast<double>(key), static_cast<double>(value));
 		}
 
 		return result;
