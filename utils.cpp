@@ -74,8 +74,8 @@ namespace
 			{
 				int key = pair.first;
 				int value = pair.second;
-				int count = commonFactors[key];
-				if ((count < value) || (!count))
+				//int count = commonFactors[key];
+				if (commonFactors[key] < value)
 					commonFactors[key] = value;
 			}
 		}
