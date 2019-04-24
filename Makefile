@@ -1,2 +1,2 @@
-hellomake: main.cpp utils.cpp
+lcm: main.cpp utils.cpp
 	g++ -o lcm main.cpp utils.cpp -I.
