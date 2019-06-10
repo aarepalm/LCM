@@ -68,7 +68,7 @@ namespace
 
 		// Find all the common factors
 		std::map<int, int> commonFactors;
-		for (const auto & map : factoredIntegers)
+		for (const auto& map : factoredIntegers)
 		{
 			for (const auto &pair : map)
 			{
@@ -81,11 +81,11 @@ namespace
 
 		// Multiply all the common factors to get the Lowest Common Multiplier
 		double result = 1;
-		for (const auto &pair : commonFactors)
+		for (const auto& pair : commonFactors)
 		{
 			int key = pair.first;
 			int value = pair.second;
-			result *= pow(static_cast<double>(key), static_cast<double>(value));
+			result *= pow(static_cast<int>(key), static_cast<int>(value));
 		}
 
 		return result;
